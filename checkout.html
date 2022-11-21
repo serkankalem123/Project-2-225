@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Kalem's Christmas Card Shop</title>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+            <div class="container">
+              <a href="#" class="navbar-brand"> Kalem's Christmas Card Shop</a>
+             
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class= "nav-link">Home</a>
+            </li>
+          <li class="nav-item">
+            <a href="productlisting.html" class="nav-link">Product Listing</a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a href="checkout.html" class="nav-link">Checkout</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+    
+        </ul>
+      </div>
+    </div>
+    </nav>
+   
+   <br>
+   <br>
+   <br> 
+   <p>Checkout Form</p>
+
+   <form class="row g-3">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefaultUsername" class="form-label">Username</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationDefault03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3">
+      <label for="validationDefault04" class="form-label">State</label>
+      <select class="form-select" id="validationDefault04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="validationDefault05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-5 mb-5">
+
+            
+
+        <div class="row g-3">
+
+          <div class="col-md-6">  
+            
+            <span>Payment Method</span>
+            <div class="card">
+
+              <div class="accordion" id="accordionExample">
+                
+                <div class="card">
+                  <div class="card-header p-0" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                          <span>Paypal</span>
+                          <img src="" width="30">
+                          
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <input type="text" class="form-control" placeholder="Paypal email">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header p-0">
+                    <h2 class="mb-0">
+                      <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                          <span>Credit card</span>
+                          <div class="icons">
+                          
+                          
+                          </div>
+                          
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body payment-card-body">
+                      
+                      <span class="font-weight-normal card-text">Card Number</span>
+                      <div class="input">
+
+                        <i class="fa fa-credit-card"></i>
+                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                        
+                      </div> 
+
+                      <div class="row mt-3 mb-3">
+
+                        <div class="col-md-6">
+
+                          <span class="font-weight-normal card-text">Expiry Date</span>
+                          <div class="input">
+
+                            <i class="fa fa-calendar"></i>
+                            <input type="text" class="form-control" placeholder="MM/YY">
+                            
+                          </div> 
+                          
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                          <span class="font-weight-normal card-text">CVC/CVV</span>
+                          <div class="input">
+
+                            <i class="fa fa-lock"></i>
+                            <input type="text" class="form-control" placeholder="000">
+                            
+                          </div> 
+                          
+                        </div>
+                        
+
+                      </div>
+
+                      <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your transaction is secured with ssl certificate</span>
+                     
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+              <span>Summary</span>
+
+              <div class="card">
+
+                <div class="d-flex justify-content-between p-3">
+
+                  <div class="d-flex flex-column">
+
+                    <span>Pro(Billed Monthly) <i class="fa fa-caret-down"></i></span>
+                    <a href="#" class="billing">Save 20% with annual billing</a>
+                    
+                  </div>
+
+                  <div class="mt-1">
+                    <sup class="super-price">$9.99</sup>
+                    <span class="super-month">/Month</span>
+                  </div>
+                  
+                </div>
+
+                <hr class="mt-0 line">
+
+                <div class="p-3">
+
+                  <div class="d-flex justify-content-between mb-2">
+
+                    <span>Refferal Bonouses</span>
+                    <span>-$2.00</span>
+                    
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+
+                    <span>Vat <i class="fa fa-clock-o"></i></span>
+                    <span>-20%</span>
+                    
+                  </div>
+                  
+
+                </div>
+
+                <hr class="mt-0 line">
+
+
+                <div class="p-3 d-flex justify-content-between">
+
+                  <div class="d-flex flex-column">
+
+                    <span>Today you pay(US Dollars)</span>
+                    <small>After 30 days $9.59</small>
+                    
+                  </div>
+                  <span>$0</span>
+
+                  
+
+                </div>
+
+
+                <div class="p-3">
+
+                <button class="btn btn-primary btn-block free-button">Try it free for 30 days</button> 
+               <div class="text-center">
+                 <a href="#">Have a promo code?</a>
+               </div>
+                  
+                </div>
+
+
+
+                
+              </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+
+  </form>
+</div>
+</div>
+
+    </div>
+    <br>
+  </form>
+
+
+
+
+
+  
+
+    </body>
+    </html>

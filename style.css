@@ -1,0 +1,71 @@
+.hero {
+    background-image: url(ornament.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+   
+    image-rendering:pixelated;
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+  
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    align-self: normal;
+    
+}
+
+
+
+.min-vh-75 {
+    min-height:75vh !important;
+}
+
+.heading-1 {
+    font-size:52px;
+    font-weight:normal;
+}
+
+.w-65 {
+    width:65%;
+}
+
+@media (min-width: 768px) {
+    .news-input {
+      width: 50%;
+    }
+  }
+
+
+
+
+
+
+.col-sm {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+
+
+  .col {
+      justify-content: center;
+      text-align: center;
+      float: left;
+  }
+
+ 
